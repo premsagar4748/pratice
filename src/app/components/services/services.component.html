@@ -1,0 +1,22 @@
+<app-header></app-header>
+using *ngFor *ngIf
+    <div class="services" style="color: blue; text-decoration: underline;text-align: center;">
+        <h1>COURSES</h1></div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12 mb-3" *ngFor="let course of courses;let i=index">
+                        <div class="card h-80">
+                            <img src="./assets/s/{{course.img}}" alt="">
+                            <div class="card body">
+                                <h3 class="card-title">{{i+1}}. {{course.name | uppercase}}</h3>
+                                <p>{{course.content}}</p>
+                                <div>
+                                <button class="btn btn-danger m-3">Fee: {{course.Fee |currency:"INR"}}/-</button>
+                                <button class="btn btn-primary">duraction: {{course.duraction}}</button>  
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+<app-footer></app-footer>

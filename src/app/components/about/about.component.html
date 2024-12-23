@@ -1,0 +1,63 @@
+<app-header></app-header>
+<!-- data binding form TS to HTML -->
+<div class="container">
+    
+    <p>{{courses[1]}}</p>
+    <p>{{course.fee}}</p>
+    <img [src]="img" style="width: 400px;height: 200px;">
+
+<!-- event binding from HTML to TS -->
+    <button (click)="rec('data call from HTML to TS')" class="btn btn-danger"> click here</button>
+    <button (click)="rew('')" class="btn btn-primary">read more</button>
+</div>
+
+
+<h3 class="text-center mt-5">structural directives
+: [ngswitch]*ngSwitchCase *ngSwitchDefault,pipes,[ngstyle],[ngclass]</h3>
+<div>
+    <h4 style="text-align:center">choose your color :</h4>
+    <div [ngSwitch]="color | lowercase" style="text-align: center;">
+    <h2 *ngSwitchCase="'red'" style="color:red">My favorate color is red</h2>
+    <h2 *ngSwitchCase="'yellow'" style="color:yellow">My favorate color is yellow</h2>
+    <h2 *ngSwitchCase="'blue'" style="color:blue">My favorate color is blue</h2>
+    <h2 *ngSwitchCase="'green'" style="color:green">My favorate color is green</h2>
+    <h2 *ngSwitchDefault="">invalid</h2>
+
+    </div>
+
+    <div>        
+    <h1 [ngStyle]="prem">Angular_tech</h1>
+    
+    <h3 [ngStyle]="quantity1>0? green:red">Stock avalible</h3>
+    <h3 [ngStyle]="quantity== 0? red:green">out of stock</h3>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card bg-info text-center">
+                        <h1>Counter</h1>
+                        </div>
+                        <div class="text-center">
+                            <h1>{{counter}}</h1>                
+                        <button class="btn btn-primary m-2" (click)="inc()">Increment</button>
+                        <button class="btn btn-danger" (click)="dec()">Decrement</button>
+                        </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1>service</h1>
+        <app-studentlist></app-studentlist>
+
+        <app-studentdetails></app-studentdetails>  
+
+     
+
+
+
+<app-footer></app-footer>

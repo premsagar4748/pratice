@@ -1,0 +1,74 @@
+<app-header></app-header>
+Template driven validaction
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-7 mx-auto">
+            <div class="card">
+                <div class="card-header bg-warning text-white">
+                    <h3 class="text-center">Register here</h3>
+            </div>
+            <!-- ngform -->
+            <div class="card-body">
+                <form id="Register" #regform="ngForm">    
+                    <div class="mt-2 mb-2">
+                        <label class="form-label"><span class="fw-bold">First name</span></label>
+                        <input type="text" class="form-control" id="fname"
+                        placeholder=""  [(ngModel)]="student.fname" name="fname" required
+                        #fname="ngModel"[ngClass]="fname.touched&&fname.invalid?'border border-danger':''">                      
+                        
+                        <p class="text-danger fw-bold" *ngIf="fname.touched&&fname.invalid">Enter First name</p>
+                    </div>
+                    
+                    <div class="mt-2 mb-2">
+                        <label class="form-label"><span class="fw-bold"> Last Name</span></label>
+                        <input type="text" class="form-control" id="lname"
+                        placeholder="" [(ngModel)]="student.lname" name="lname"  required 
+                        #lname="ngModel"[ngClass]="lname.touched&&lname.invalid?'border border-danger':''">
+
+                        <p class="text-danger fw-bold" *ngIf="lname.touched&&lname.invalid" >Enter last name</p>
+
+                    </div>
+
+                    <div class="mt-2 mb-2">
+                        <label class="form-label fw-bold">Email id</label>
+                        <input type="text" class="form-control" id="email"
+                        placeholder="" [(ngModel)]="student.email" name="email" 
+                        #email="ngModel" [ngClass]="email.touched&&email.invalid?'border border-danger':''" required>
+
+                        <p *ngIf="email.touched&&email.invalid" class="text-danger fw-bold">Enter email</p>
+                    </div>
+
+                    <div class="mt-2 mb-2">
+                        <label class="form-label fw-bold">Password</label>
+                        <input type="password" class="form-control" id="Psd"
+                        placeholder="" [(ngModel)]="student.password" name="Psd" required 
+                        #psd="ngModel"[ngClass]="psd.touched&&psd.invalid?'border border-danger':''">
+                        
+                        <p *ngIf="psd.touched&&psd.invalid" class="text-danger fw-bold">Enter password</p>
+                    </div>
+
+                    <div class="mt-2 mb-2">
+                        <label class="form-label fw-bold" >Phone Number</label>
+                        <input type="number" class="form-control" id="phone" 
+                        placeholder="" [(ngModel)]="student.phone" name="phone" required
+                        #phone="ngModel" [ngClass]="phone.touched&&phone.invalid?'border-border-danger':''">
+
+                        <p *ngIf="phone.touched&&phone.invalid" class="text-danger fw-bold" >Enter phone number</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" (click)="reg()" [disabled]="regform.invalid">Register</button>
+                    <p [ngClass]="clr">{{msg}}</p>
+
+                    <div>already have an account  
+                        <a routerLink="/login">login here</a>
+                    </div>                    
+ 
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

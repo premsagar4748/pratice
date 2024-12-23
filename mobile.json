@@ -1,0 +1,31 @@
+{
+    "mobiles":[
+        {
+        "name":"Oneplus",
+        "parice":64000,
+        "ram":12,
+        "storage":256
+        },
+        {
+            "name":"Oneplus",
+            "parice":64000,
+            "ram":12,
+            "storage":256
+        },
+        {
+            "name":"Oneplus",
+            "parice":64000,
+            "ram":12,
+            "storage":256
+        },
+        {
+            
+        "name":"Oneplus",
+        "parice":64000,
+        "ram":12,
+        "storage":256
+        }
+        
+
+]
+}

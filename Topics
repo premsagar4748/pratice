@@ -1,0 +1,54 @@
+Topics
+-----------------------------------
+->App-component desgin *
+->component create *
+->Routing *
+->Boostrap include and install *
+->HTML-ANGUALR *
+->Static desgin *
+->page not found *
+->active link *
+->component reuse(header,footer) *
+---------------------------------
+Typescript
+->one way binding:
+        ->data binding *
+        ->property binding *
+        ->event binding *
+
+->Two way binding:
+        ->Template Driven Validation *
+        ->Reactive Form Validation *
+------------------------------------
+Directives
+->strutral Directives
+        *ngFor *
+        *ngIf *
+        *ngSwitch *
+->Attribute Directives
+        [ngClass] -*
+        [ngStyle] *
+<ng-container></ng-container> *
+pipes *
+------------------------------------
+->Two way binding:
+        ->Template Driven Validation
+        ->Reactive Form Validation
+
+        Ajay concept -> register and login
+        modules
+        lazy loading
+        servies
+        child routing->Dashboard Navigation
+        ->Local storage
+        ->CRUD OPERATIONS
+        ->Slides
+        ->Products
+------------------------------------
+parent-child
+child-parent
+life cycle methods
+promisses and Obserbales
+Route Gaurds
+Angular Material
+

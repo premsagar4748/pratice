@@ -1,0 +1,49 @@
+<app-header></app-header>
+Reactive form modulaction
+ 
+<div class="main mt-5">
+        <div class="card-body w-50" style="height: 50v;">
+            <h1 class="text-center mt-5 fw-bold" style="font-family:Georgia, 'Times New Roman', Times, serif; color: rgb(0, 32, 105);">LOGIN</h1>
+            <div class="text-center mt-5">
+                <img height="40vh" width="40wh" src="https://cdn.icon-icons.com/icons2/2851/PNG/512/facebook_fb_logo_icon_181508.png">
+                <img  height="50vh" width="50wh" src="https://cdn3d.iconscout.com/3d/free/thumb/free-instagram-logo-5476192-4602443.png">
+                <img  height="40vh" width="40wh" src="https://static.vecteezy.com/system/resources/previews/022/488/752/non_2x/3d-youtube-logo-icon-isolated-on-transparent-background-free-png.png">
+
+            </div>             
+        </div>     
+
+    <div class="container">
+        <div class="col">
+            <div class="col-md-6 sm-8">               
+                    <div class="card-body">
+                        <form id="login"  [formGroup]="loginForm" (submit)="login()" #logForm="ngForm">
+                            <div class="mt-4 mb-3">
+                                <label for="email" class="form-label fw-bold">Userid</label>                            
+                                <input type="email" class="form-control" id="email" 
+                                placeholder="" name="email" formControlName="email" required 
+                                >
+    
+                            </div>
+    
+                            <div class="mt-3 mb-3">
+                                <label for="password" class="form-label fw-bold">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                placeholder="" name="password" formControlName="password" required
+                                 >
+    
+                            </div>
+    
+                            <button type="submit" class=" btn btn-info" [disabled]="logForm.invalid">Login</button>
+                            <p>you don't account Register <a routerLink="/register">here</a> </p>
+                        </form>
+                    </div>
+                
+            </div>
+    
+        </div>
+    </div>
+
+
+</div>
+
+<app-footer></app-footer>

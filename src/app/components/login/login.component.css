@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    flex-direction:row;
+    padding-left: 25%;
+    background-image: url("https://images.pexels.com/photos/3802666/pexels-photo-3802666.jpeg?cs=srgb&dl=pexels-willm-3802666.jpg&fm=jpg&_gl=1*26mt55*_ga*MjQ2OTk0MjE3LjE3MTAzMDY2MDE.*_ga_8JE65Q40S6*MTcyNDc1OTcyNS4xNy4xLjE3MjQ3NjA1NDAuMC4wLjA.");
+    
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;   
+        
+    
+}

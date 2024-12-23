@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><h1>{{email}}</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard/users">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard/profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard/slides">Slides</a>
+          </li>
+        
+        </ul>
+        <button class="btn btn-danger ms-auto" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    flex-direction:column;
+    padding-left: 33%;
+    background-image: url("https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;   
+    border: 5px rgb(8, 120, 232);
+        
+    
+}

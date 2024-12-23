@@ -1,0 +1,97 @@
+ANGULAR:
+pre-required skills:
+    HTML
+    CSS
+    JAVA SCRIPT
+required softwares:
+    node JS:
+    npm:
+    VS code
+ANGULAR project: commands
+
+What is angular ?
+    ->Angular is one of the most popular js framework for building clint-side applications.
+    ->Angular is development flatform for SAP(single page application)for mobile and desktop.
+    ->Angular is not a programming language , we write our own logic in typescript(.ts) 
+    ->Angular is frame work
+
+angular js :
+    ->Only supports js
+    ->MVC architecture
+    ->no supports for mobile Broswsers
+
+Angular:
+    ->supports both JS & Typescripts
+    ->components based architecture
+    ->it has CLI tool
+    ->it use Dependency Injuction
+    ->supports Mobile  Browsers
+
+Angular versions: 1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17......
+now i am working on angular 16 version
+
+-----------------------COMMANDS--------------------------
+commands :
+To find node JS : node  --version
+                  node -v (18.17.1)  - (dont download current version
+To find npm :     npm --versio (when node installed automatically npm installed)
+                  npm -v
+To check Angular version :ng version
+To install Angular version:npm install -g @angular/cli (or) @angular/cli@latest
+To install Angular paticular version :npm install -g @angular/cli@16
+To uninstall Angular version:npm install -g @angular/cli)
+
+To create Project:ng new ProjectName (dont use spaces)
+To move project path :cd ProjectName
+To run the project :ng serve
+To open the poject direct website:ng serve --open
+----------------------------------------------------------
+COMPONENTS
+->Generate:
+           ng generate component componentname
+        ex:ng g c home
+extra 
+->Library installation:
+            npm install boostrap
+
+----------------------------------------------------------
+-> node_modules-> it will download and stores the data form the our project dependencies libraries. 
+               without node modules project will not work. Document file size is high.
+-> src->we are doing project work in src
+-> .editorconfig->it will shoes dependencies
+-> .gitigiore->to push code
+-> angular.json-> Total structure of project details here,we should add and remove linkup files(re ->copailation ctrl+c)before add links
+->{}package-lock.jos & package->all version details are here.
+->README.md-> all commands eg:ng generate,ng serve ,ng test,ng tests,etc...
+-------------------------------------------------------
+
+Typescript:super set of java script and we add type
+
+Bindings: one way and two way
+->oneway
+either
+view(html) to component(ts)
+or
+component(ts) to view(html)
+
+->Twoway
+both view(html) to component(ts) and (html)to(ts)
+
+ONE way binding:
+    ->data binding/Interpolation:{{}} => TS to HTML
+    ->property binding:[] =>TS to HTML
+    ->Event binding:() =>HTML to TS
+    ->Arrys nd objects []
+    ->*ngmodules
+    ->*oninit
+    ->*ngFor
+    ->*ngIf
+    ->*ngSwitch
+    ->*ngSwitchcase
+    ->*
+
+Twoway:[()]
+
+->Template Driven validation =>HTML=>FormModule......( we should import FormModule ,RelativeFormModule in app.module.ts)
+->Reactive form validation =>TS =>RelativeFormModule ....(after import  should add imppts[FormModule,RelativeFormModule])
+

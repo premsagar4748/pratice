@@ -1,0 +1,52 @@
+<app-header></app-header>
+
+
+<div  class="container mob-table">
+
+    <div class="headers bg-success text-white">
+        <h2 class="table-title">Mobiles Store</h2>
+        <button class="btn btn-warning" style="color: aliceblue;">+Add mobile</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr class="text-center">
+                <th>MOBILE</th>
+                <th>price$</th>
+                <th>RAM</th>
+                <th>Storage</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            <tr *ngFor="let m of productData">
+                <td>{{m.title}}</td>
+                <td>{{m.price}}</td>
+                <td>{{m.ram}}</td>
+                <td>{{m.Storage}}</td>
+                <td>
+                    <button class="btn btn-info">edit</button>
+                    <button class="btn btn-danger">delete</button>
+                </td>
+            </tr>
+
+        </tbody>
+
+        <!-- <tr *ngFor="let p of productData">
+            <td>
+               <h1>{{p.id}} {{p.title}} {{p.description}}</h1>
+            </td>
+        </tr> -->
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+

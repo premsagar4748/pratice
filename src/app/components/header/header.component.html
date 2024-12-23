@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">    
+    <div class="container-fluid bg-primary">
+      <a class="navbar-brand" routerLink="/"><h2 style="color: rgb(241, 148, 33); font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Angular_tech</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" *ngFor="let menu of navs">
+            <a class="nav-link"[routerLink]="menu.url"
+             routerLinkActive="active">{{menu.name |titlecase}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
